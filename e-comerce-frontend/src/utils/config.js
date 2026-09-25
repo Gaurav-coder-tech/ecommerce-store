@@ -3,7 +3,7 @@ const devConfig = {
 }
 
 const prodConfig = {
-  baseURL: 'Your production url',
+  baseURL: 'https://ecommerce-store-backend-drzy.onrender.com',
 }
 
-export const config = devConfig
+export const config = import.meta.env.PROD ? prodConfig : devConfig
